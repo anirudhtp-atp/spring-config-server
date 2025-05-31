@@ -1,1 +1,10 @@
-
+spring:
+    application:
+        name: eureka-server
+server:
+    port: 8761
+    
+logging:
+    level:
+        org:
+            springframework: INFO
