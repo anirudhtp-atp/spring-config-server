@@ -1,0 +1,29 @@
+spring:
+    application:
+        name: order-service
+    datasource:
+        url: jdbc:postgresql://localhost:5432/orderdb
+        driverClassName: org.postgresql.Driver
+        username: postgres
+        password: postgres
+    jpa:
+        hibernate:
+            ddl-auto: update
+        show-sql: true
+
+eureka:
+    instance:
+        preferIpAddress: true
+    client:
+        registerWithEureka: true
+        fetchRegistry: true
+        serviceUrl:
+            defaultZone: http://localhost:8761/eureka   
+        
+server:
+    port: 8002
+    
+logging:
+    level:
+        org:
+            springframework: INFO
