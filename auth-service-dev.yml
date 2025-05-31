@@ -1,6 +1,6 @@
 spring:
     application:
-        name: auth-service-dev
+        name: auth-service
     datasource:
         url: jdbc:postgresql://localhost:5432/credentialdb
         driverClassName: org.postgresql.Driver
