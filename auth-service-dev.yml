@@ -1,0 +1,20 @@
+spring:
+    application:
+        name: auth-service
+    datasource:
+        url: jdbc:postgresql://localhost:5432/credentialdb
+        driverClassName: org.postgresql.Driver
+        username: postgres
+        password: postgres
+    jpa:
+        hibernate:
+            ddl-auto: update
+        show-sql: true
+        
+server:
+    port: 8002
+    
+logging:
+    level:
+        org:
+            springframework: INFO
