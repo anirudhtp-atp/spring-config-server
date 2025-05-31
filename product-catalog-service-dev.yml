@@ -1,6 +1,6 @@
 spring:
     application:
-        name: product-catalog-service-dev
+        name: product-catalog-service
     data:
         mongodb:
             host: localhost
