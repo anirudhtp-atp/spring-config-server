@@ -15,7 +15,7 @@ spring:
         consumer:
             auto-offset-reset: earliest
             properties:
-                spring.json.trusted.packages: com.atp.ecom.productcatalog.dto
+                spring.json.trusted.packages: *
 
 eureka:
     instance:
