@@ -27,10 +27,6 @@ eureka:
 server:
     port: 8005
     
-logging:
-    level:
-        org:
-            springframework: INFO
 
 management:
   endpoints:
@@ -52,5 +48,8 @@ management:
       enabled: true
 
 logging:
+  level:
+      org:
+          springframework: INFO
   pattern:
     console: "%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg traceId=%X{traceId}%n"
