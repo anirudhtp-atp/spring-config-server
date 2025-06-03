@@ -45,3 +45,9 @@ management:
       zipkin:
         enabled: true
         endpoint: http://localhost:9411/api/v2/spans
+    propagation:
+      enabled: true
+
+logging:
+  pattern:
+    console: "%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg traceId=%X{traceId}%n"
