@@ -22,12 +22,6 @@ eureka:
         
 server:
     port: 8002
-    
-logging:
-    level:
-        org:
-            springframework: INFO
-
 
 management:
   endpoints:
